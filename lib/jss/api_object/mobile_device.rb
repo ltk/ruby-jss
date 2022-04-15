@@ -423,7 +423,7 @@ module JSS
     # the args.
     #
     def initialize(args = {})
-      super args
+      super(**args)
       if @in_jss
 
         gen = @init_data[:general]

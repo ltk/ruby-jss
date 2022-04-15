@@ -87,7 +87,7 @@ module JSS
 
         ###
         def initialize(args = {})
-            super args
+            super(**args)
 
             if self.in_jss?
 
@@ -393,7 +393,7 @@ module JSS
             else
                 raise JSS::InvalidDataError, "os_requirements must either be a string, float, or an array containing strings or floats." unless (newvalue.is_a?(String) || newvalue.is_a?(Float)) && !newvalue.nil?
             end
-                
+
             @os_requirements = newvalue
 
             @need_to_update = true

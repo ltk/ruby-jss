@@ -777,7 +777,7 @@ module JSS
     #
     #
     def initialize(args = {})
-      super args
+      super(**args)
       if @in_jss
 
         # mutable stuff

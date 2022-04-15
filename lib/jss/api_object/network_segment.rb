@@ -375,7 +375,7 @@ module JSS
     ### addresses can be provided when using id: :new
     ###
     def initialize(args = {})
-      super args
+      super(**args)
 
       if args[:id] == :new
         range = self.class.ip_range(

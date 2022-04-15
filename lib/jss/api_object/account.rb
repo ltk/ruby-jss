@@ -152,7 +152,7 @@ module JSS
     # See JSS::APIObject#initialize
     #
     def initialize(args = {})
-      super args
+      super(**args)
 
       # check to see if a user has been specified, haven't built groups yet
       is_user = [:userid, :username].any? { |key| args.keys.include? key }

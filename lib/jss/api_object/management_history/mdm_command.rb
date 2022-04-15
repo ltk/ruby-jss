@@ -55,7 +55,7 @@ module JSS
         args[:completed_epoch] ||= args[:date_time_completed_epoch]
         args[:issued_epoch] ||= args[:date_time_issued_epoch]
         args[:failed_epoch] ||= args[:date_time_failed_epoch]
-        super args
+        super(**args)
       end
 
       # @!attribute [r] name

@@ -219,7 +219,7 @@ module JSS
         raise JSS::InvalidDataError, 'New group creation must specify a :type of :smart or :static' unless GROUP_TYPES.include? args[:type]
       end
 
-      super args
+      super(**args)
 
       @is_smart = @init_data[:is_smart] || (args[:type] == :smart)
 

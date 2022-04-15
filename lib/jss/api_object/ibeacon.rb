@@ -90,7 +90,7 @@ module JSS
     # @see JSS::APIObject.initialize
     #####################################
     def initialize(args = {})
-      super args
+      super(**args)
 
       @uuid = @init_data[:uuid]
       @major = @init_data[:major]

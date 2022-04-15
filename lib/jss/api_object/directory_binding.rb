@@ -108,7 +108,7 @@ module JSS
         # JSS::DirectoryBinding.make name: "Example Binding", username: "BindingUser", password: "SuperMonkey123", computer_ou: "computers", active_directory: { multiple_domains: false }, domain: your.domain.server
         #####################################
         def initialize(args = {})
-            super args
+            super(**args)
 
             if self.in_jss?
                 @priority = @init_data[:priority]
@@ -203,7 +203,7 @@ module JSS
             @need_to_update = true
         end
 
-        
+
         # The OU path the computer object is to be placed
         #
         # @author Tyler Morgan

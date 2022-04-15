@@ -160,8 +160,8 @@ module JSS
     ###
     ### See JSS::APIObject#initialize
     ###
-    def initialize (args = {})
-      super
+    def initialize(args = {})
+      super(**args)
 
       @full_name = @init_data[:full_name]
       @email = @init_data[:email]

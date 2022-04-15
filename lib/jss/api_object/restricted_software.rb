@@ -89,7 +89,7 @@ module JSS
     #####################################
 
     def initialize(args = {})
-      super args
+      super(**args)
 
       @init_data[:general] ||= {}
       @process_name = @init_data[:general][:process_name]

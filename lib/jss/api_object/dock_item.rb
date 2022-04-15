@@ -87,7 +87,7 @@ module JSS
     # @see JSS::APIObject.initialize
     #####################################
     def initialize(args = {})
-      super args
+      super(**args)
 
       @type = 'App' if @init_data[:type].nil?
       @type = @init_data[:type]
