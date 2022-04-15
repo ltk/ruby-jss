@@ -66,7 +66,7 @@ Gem::Specification.new do |s|
   # https://github.com/lostisland/faraday: MIT License
   s.add_runtime_dependency 'faraday', '~> 1.10'
   # https://github.com/lostisland/faraday_middleware & dependencies: MIT License
-  s.add_runtime_dependency 'faraday_middleware', '~> 1.10'
+  s.add_runtime_dependency 'faraday_middleware', '~> 1.2'
   # https://github.com/stitchfix/immutable-struct MIT License (no dependencies)
   s.add_runtime_dependency 'immutable-struct', '~> 2.3', '>= 2.3.0'
   # https://github.com/aetherknight/recursive-open-struct MIT License (no dependencies)
