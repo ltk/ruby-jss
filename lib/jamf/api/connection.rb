@@ -190,7 +190,7 @@ module Jamf
       @collection_cache = {}
       @ext_attr_cache = {}
 
-      connect(url, params) unless params[:do_not_connect]
+      connect(url, **params) unless params[:do_not_connect]
     end
 
     # Public Instance Methods
