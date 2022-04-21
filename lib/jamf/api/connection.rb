@@ -734,7 +734,7 @@ module Jamf
       when :pw
         token_params[:pw] = data
       end
-      self.class::Token.new token_params
+      self.class::Token.new **token_params
     end
 
     # From whatever was given in params[:pw], figure out the password to use
