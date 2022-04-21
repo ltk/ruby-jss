@@ -62,7 +62,7 @@ module Jamf
     #
     # This resets them to the correct time
     def initialize(*args)
-      super(**args)
+      super(*args)
       @timestamp += @timestamp.utc_offset
     end
 
