@@ -66,8 +66,8 @@ module Jamf
     #
     attr_reader :assignmentTimestamp
 
-    def initialize(*args)
-      super(*args)
+    def initialize(object, **options, &block)
+      super(object, **options, &block)
       @assignmentTimestamp = Jamf::Timestamp.new @assignmentEpoch
     end
 

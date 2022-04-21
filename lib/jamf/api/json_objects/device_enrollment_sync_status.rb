@@ -61,8 +61,8 @@ module Jamf
     # but is should be "2019-12-06T18:32:47.218Z"
     #
     # This resets them to the correct time
-    def initialize(*args)
-      super(*args)
+    def initialize(object, **options, &block)
+      super(object, **options, &block)
       @timestamp += @timestamp.utc_offset
     end
 

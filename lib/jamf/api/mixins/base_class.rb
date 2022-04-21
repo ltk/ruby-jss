@@ -55,15 +55,15 @@ module Jamf
     end
 
     # Can't allocate if base class
-    def allocate(*args, &block)
+    def allocate(object, **options, &block)
       stop_if_base_class ALLOCATION_ACTION
-      super
+      super(object, **options, &block)
     end
 
     # Can't instantiate if base_class
-    def new(*args, &block)
+    def new(object, **options, &block)
       stop_if_base_class INSTANTIATION_ACTION
-      super
+      super(object, **options, &block)
     end
 
     # raise an exception if this class is a base class
